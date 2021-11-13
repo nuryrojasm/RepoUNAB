@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/3.jpeg" alt="Foto1">
+                            <div class="caption center-align">
+                                <h3>#ArteparaelAlma</h3>
+                                <h5 class=light ">Nury Yasmín Rojas Martínez</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/4.jpeg " alt="Foto2 ">
+							<div class="caption right-align ">
+								<h3>#ArteparaelAlma</h3>
+								<h5 class="light ">Nury Yasmín Rojas Martínez</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/5.jpeg " alt="Foto3 ">
+                            <div class="caption left-align ">
+                                <h3>#ArteparaelAlma</h3>
+                                <h5 class="light ">Nury Yasmín Rojas Martínez</h5>
+							</div>	
+						</li>
+						<li>
+                            <img src="img/6.jpeg " alt="Foto6 ">
+                            <div class="caption left-align ">
+                                <h3>#ArteparaelAlma</h3>
+                                <h5 class="light ">Nury Yasmín Rojas Martínez</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6 ">
+                    <div class="section ">
+                        <img src="img/3.jpeg " alt="foto1 " class="materialboxed responsive-img ">
+                    </div>
+                </div>
+                <div class="col s6 ">
+                    <div class="section ">
+                        <img src="img/5.jpeg " alt="foto9 " class="materialboxed responsive-img ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                interval: 2000
+            });
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+        });
+    </script>
+
+</body>
+
+</html>
